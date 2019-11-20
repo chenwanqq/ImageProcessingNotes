@@ -1,4 +1,4 @@
-# ImageProcessingNotes
+# ImageProcessingNotes 34章
 ## 第三章 空间域图像增强
 ### 3.2
 * 图像反转 增强位于暗处的白色或灰色细节
@@ -128,6 +128,9 @@ $$\bigtriangledown^2f(x,y)\Leftrightarrow -4\pi^2(u^2+v^2)F(u,v)$$
 ![pic10](相关.png)
 * 相似性
 $$f(ax,by)\Leftrightarrow \frac{1}{|ab|}F(u/a,v/b)$$
+* 分配性
+$$ F^{-1}[f_1(x,y)+f_2(x,y)]=F^{-1}[f_1(x,y)]+F^{-1}[f_2(x,y)]$$
+$$ F^{-1}[f_1(x,y)\cdot f_2(x,y)]=F^{-1}[f_1(x,y)]\cdot F^{-1}[f_2(x,y)]$$
 
 ### 频率域滤波
 
@@ -163,3 +166,6 @@ $$ H(u,v)=\frac{1}{1+[D_0/D(u,v)]^{2n}} $$
 $$ H(u,v)=1-e^{-D^2(u,v)/2D_0^2}$$
 ##### 频率域拉普拉斯（高通）滤波器
 $$ H(u,v)=1-4\pi^2(u^2+v^2)$$
+#### 其它
+在进行滤波前，需要用0延拓
+![yt](yt.jpg)
